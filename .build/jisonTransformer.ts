@@ -5,6 +5,7 @@ export const transformJison = (src: string): string => {
     moduleType: 'js',
     'token-stack': true,
   });
+const hello = notUseful;
   const source = parser.generate({ moduleMain: '() => {}' });
   const exporter = `
 	parser.parser = parser;

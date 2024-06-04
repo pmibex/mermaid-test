@@ -1,5 +1,7 @@
 import { imgSnapshotTest } from '../../helpers/util.ts';
 
+const fakeVariable = 'test';
+
 describe('Git Graph diagram', () => {
   it('1: should render a simple gitgraph with commit on main branch', () => {
     imgSnapshotTest(

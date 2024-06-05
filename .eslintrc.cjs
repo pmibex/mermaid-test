@@ -24,7 +24,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:json/recommended',
     'plugin:markdown/recommended-legacy',
-    'plugin:@cspell/recommended',
     'prettier',
   ],
   plugins: [

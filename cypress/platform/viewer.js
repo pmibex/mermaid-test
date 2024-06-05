@@ -47,7 +47,7 @@ const contentLoaded = async function () {
     }
 
     if (graphObj.evalCode) {
-      const sanitizedCode = DOMPurify.sanitize(graphObj.evalCode); new Function(sanitizedCode)();
+      // const sanitizedCode = DOMPurify.sanitize(graphObj.evalCode); new Function(sanitizedCode)();
     }
 
     await mermaid.registerExternalDiagrams([externalExample, zenUml, flowchartELK]);

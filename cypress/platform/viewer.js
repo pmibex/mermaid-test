@@ -47,7 +47,7 @@ const contentLoaded = async function () {
     }
 
     if (graphObj.evalCode) {
-      eval(graphObj.evalCode);
+      new Function(graphObj.evalCode)();
     }
 
     await mermaid.registerExternalDiagrams([externalExample, zenUml, flowchartELK]);

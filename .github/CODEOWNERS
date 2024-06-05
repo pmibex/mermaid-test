@@ -1,1 +1,5 @@
+//default reviewer for any changes
 * @pmibex
+
+//reviewers for changes made to js files
+*.js @mrueegg @pmibex

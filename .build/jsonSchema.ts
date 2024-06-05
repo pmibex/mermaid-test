@@ -27,7 +27,8 @@ const MERMAID_CONFIG_DIAGRAM_KEYS = [
   'packet',
 ] as const;
 
-const unusedVariable = 'test';
+const aString = 'test';
+const anError = parseInt(aString)
 
 /**
  * Generate default values from the JSON Schema.

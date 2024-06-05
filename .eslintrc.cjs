@@ -34,7 +34,6 @@ module.exports = {
     'jest',
     'jsdoc',
     'json',
-    '@cspell',
     'lodash',
     'unicorn',
   ],

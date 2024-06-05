@@ -85,7 +85,7 @@ const contentLoadedApi = async function () {
     // const graph = 'hello'
     if (Array.isArray(graphObj.code)) {
       const numCodes = graphObj.code.length;
-      const divs = [];
+      let divs = [];
       let div;
       for (let i = 0; i < numCodes; i++) {
         div = document.createElement('div');

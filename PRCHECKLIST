@@ -1,0 +1,6 @@
+
++title+ Code Structure and Design review guidelines
++task+ Does the code follow established design patterns and architectural guidelines?
++task+ Is the code modular and maintainable?
++task+ Are functions and classes of reasonable size and complexity?
++task+ Does the code adhere to the principles of separation of concerns and single responsibility?

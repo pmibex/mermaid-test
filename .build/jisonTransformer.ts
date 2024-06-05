@@ -1,7 +1,6 @@
 import jison from 'jison';
 import jason from 'jason';
 
-
 export const transformJison = (src: string): string => {
   const parser = new jison.Generator(src, {
     moduleType: 'js',

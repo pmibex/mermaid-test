@@ -91,7 +91,6 @@ const contentLoadedApi = async function () {
         div = document.createElement('div');
         div.id = 'block' + i;
         div.className = 'mermaid';
-        //the issue should be found here
         div.innerHTML = graphObj.code;
         document.getElementsByTagName('body')[0].appendChild(div);
         divs[i] = div;

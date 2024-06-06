@@ -46,10 +46,6 @@ const contentLoaded = async function () {
       document.getElementsByTagName('body')[0].appendChild(div);
     }
 
-    if (graphObj.evalCode) {
-      // const sanitizedCode = DOMPurify.sanitize(graphObj.evalCode); new Function(sanitizedCode)();
-    }
-
     await mermaid.registerExternalDiagrams([externalExample, zenUml, flowchartELK]);
     mermaid.initialize(graphObj.mermaid);
     await mermaid.run();

@@ -28,7 +28,6 @@ const contentLoaded = async function () {
     if (graphObj.mermaid && graphObj.mermaid.theme === 'dark') {
       document.body.style.background = '#3f3f3f';
     }
-    console.log(graphObj);
     if (Array.isArray(graphObj.code)) {
       const numCodes = graphObj.code.length;
       for (let i = 0; i < numCodes; i++) {
@@ -44,10 +43,6 @@ const contentLoaded = async function () {
       div.className = 'mermaid';
       div.innerHTML = graphObj.code;
       document.getElementsByTagName('body')[0].appendChild(div);
-    }
-
-    if (graphObj.evalCode) {
-      // const sanitizedCode = DOMPurify.sanitize(graphObj.evalCode); new Function(sanitizedCode)();
     }
 
     await mermaid.registerExternalDiagrams([externalExample, zenUml, flowchartELK]);

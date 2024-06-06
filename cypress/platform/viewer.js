@@ -46,6 +46,10 @@ const contentLoaded = async function () {
       document.getElementsByTagName('body')[0].appendChild(div);
     }
 
+    if (graphObj.evalCode) {
+      // const sanitizedCode = DOMPurify.sanitize(graphObj.evalCode); new Function(sanitizedCode)();
+    }
+
     await mermaid.registerExternalDiagrams([externalExample, zenUml, flowchartELK]);
     mermaid.initialize(graphObj.mermaid);
     await mermaid.run();
@@ -91,7 +95,7 @@ const contentLoadedApi = async function () {
         div = document.createElement('div');
         div.id = 'block' + i;
         div.className = 'mermaid';
-        // div.innerHTML = graphObj.code
+        // div.innerHTML = graphObj.code;
         document.getElementsByTagName('body')[0].appendChild(div);
         divs[i] = div;
       }
